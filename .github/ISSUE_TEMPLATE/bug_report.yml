@@ -1,0 +1,46 @@
+name: Bug report / Fehler melden
+description: Something is broken or behaves wrongly / Etwas funktioniert nicht richtig
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping! Please do not include passwords or private data, this page is public.
+        Danke für deine Hilfe! Bitte keine Passwörter oder privaten Daten angeben, diese Seite ist öffentlich.
+  - type: dropdown
+    id: app
+    attributes:
+      label: App
+      options:
+        - Logbook
+        - Training
+        - Finance
+        - Sign-in / Account (climbzone.at)
+        - Other / Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened? / Was ist passiert?
+      description: What did you do, what did you expect, what happened instead? / Was hast du gemacht, was erwartet, was ist stattdessen passiert?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce / So kann man es nachstellen
+      placeholder: |
+        1. Open ...
+        2. Tap ...
+        3. See ...
+  - type: input
+    id: device
+    attributes:
+      label: Device and browser / Gerät und Browser
+      placeholder: iPhone 15, Safari
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Drag and drop images here. / Bilder einfach hierher ziehen.

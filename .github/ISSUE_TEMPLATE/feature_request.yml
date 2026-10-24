@@ -1,0 +1,28 @@
+name: Feature request / Funktionswunsch
+description: Suggest an idea or improvement / Eine Idee oder Verbesserung vorschlagen
+labels: ["enhancement"]
+body:
+  - type: dropdown
+    id: app
+    attributes:
+      label: App
+      options:
+        - Logbook
+        - Training
+        - Finance
+        - Sign-in / Account (climbzone.at)
+        - Other / Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do? / Was möchtest du erreichen?
+      description: Describe the situation or problem, not only the solution. / Beschreibe die Situation oder das Problem, nicht nur die Lösung.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea / Deine Idee
+      description: How should it work? Sketches and screenshots welcome. / Wie sollte es funktionieren? Skizzen und Screenshots sind willkommen.
